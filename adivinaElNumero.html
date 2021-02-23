@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess the number</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilosAdivinaElNumero.css">
+</head>
+<body>
+	<main>
+		<div id="first-screen" class="first-screen">
+			<img src="images/psp.png" class="image" id="image">
+			<div class="content" id="content">
+				<h1 class="game-name" id="game-name">GUESS THE NUMBER</h1>
+				<button class="htp" id="htp" title="how to play"><i class="fas fa-question-circle"></i></button>
+				<button id="play" class="play">PLAY</button>
+			</div>
+		</div>
+		<div id="main-screen" class="main-screen hidden">
+			<p id="oportunities" class="oportunities"></p>
+			<input type="number" name="" placeholder="Enter your number" class="number-guess" id="number-guess">
+			<button id="guess" class="guess">GUESS</button>
+		</div>
+		<!-- 
+			Work this part after the oportunities
+
+		<div id="winner" class="winner">
+			<h2>AWESOME</h2>
+			<p>You did it <br>Would u like to play again?</p>
+			<button id="play-again" class="play-again">Play</button>
+		</div>
+		<div id="loser" class="loser">
+			<h2>Sorry, you </h2>
+			<p>You did it <br>Would u like to play again?</p>
+			<button id="play-again" class="play-again">Play</button>
+		</div>-->
+	</main>
+	<script type="text/javascript" src="scriptAdivinaElNumero.js"></script>
+</body>
+</html>
