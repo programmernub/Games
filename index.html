@@ -24,7 +24,7 @@
 		<div class="how-to-play hidden" id="how-to-play">
 			<h1>Guess the number</h1>
 			<i class="xIcon fas fa-times" id="xIcon"></i>
-			<p>A classic game whose objective is to guess the number that the machine has thought</p>
+			<p>A classic game whose objective is to guess the number that the machine has thought, almost forget this detail...the range is from 0 to 100</p>
 			<p>Steps to follow: </p>
 			<ul id="list" class="list">
 				<li class="list-option">Click on  play</li>
@@ -33,19 +33,28 @@
 				<li class="list-option">In other case the game finished and you can click on the option to play again</li>
 			</ul>
 		</div>
-		<!-- 
-			Work this part after the oportunities
-
-		<div id="winner" class="winner">
-			<h2>AWESOME</h2>
-			<p>You did it <br>Would u like to play again?</p>
-			<button id="play-again" class="play-again">Play</button>
+		<!--Estamos trabajando en esta modal, es la modal de victoria-->
+		<div id="winner" class="winner hidden">
+			<h2 class="modal-tittle">AWESOME</h2>
+			<p class="modal-description">You did it <br>Would u like to play again?</p>
+			<div id="modal-buttons-winner" class="modal-buttons">
+				<button id="no-play-again-winner" class="no-play-again button">No, thanks</button>
+				<button id="play-again-winner" class="play-again button">Do it again</button>
+			</div>
 		</div>
-		<div id="loser" class="loser">
-			<h2>Sorry, you </h2>
-			<p>You did it <br>Would u like to play again?</p>
-			<button id="play-again" class="play-again">Play</button>
-		</div>-->
+		<div id="loser" class="loser hidden">
+			<h2 id="sorry" class="modal-tittle">Sorry</h2>
+			<p>You can try again</p>
+			<div id="modal-buttons-loser" class="modal-buttons">
+				<button id="no-play-again-loser" class="no-play-again button">No, thanks</button>
+				<button id="play-again-loser" class="play-again button">Do it again</button>
+			</div>
+		</div>
+		<div id="modal-result" class="modal-result hidden">
+			<h2 id="modal-result-tittle" class="modal-result-tittle"></h2>
+			<p id="modal-result-description" class="modal-result-description"></p>
+			<button id="okay" class="okay">Okay, I got it</button>
+		</div>
 	</main>
 	<script type="text/javascript" src="scriptAdivinaElNumero.js"></script>
 </body>
